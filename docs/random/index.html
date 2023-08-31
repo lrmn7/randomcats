@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Random Cat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="darkreader-lock">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://lrmn.is-a.dev/randomcats/style.css');
+
+        html {background-color: var(--bg-color);}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .mediabox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 99.5vh;               /* Didnt do 100vh cz with that, scroll bar was appearing */
+        }
+        /* If its a mobile, excuse the top url bar */
+        @media only screen and (max-width: 768px) {
+            .mediabox {height: 90vh;}
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        video {
+            width:  100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* #text {
+            color: white;
+            font-size: 2em;
+        } */
+    </style>
+</head>
+
+
+<body>
+    <div class="mediabox" id="mediabox">
+        <p id="text">Loading...</p>
+    </div>
+</body>
+
+
+
+</html>
